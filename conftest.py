@@ -12,7 +12,7 @@ def driver():
     options.add_argument('--headless')
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     options.add_argument('window-size=1920,1080')
-    my_driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    my_driver = webdriver.Chrome(options=options)
     my_driver.implicitly_wait(10)
     yield my_driver
     my_driver.quit()
