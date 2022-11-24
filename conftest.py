@@ -2,7 +2,6 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import pytest
-from webdriver_manager.chrome import ChromeDriverManager
 
 
 @pytest.fixture(scope='function')
